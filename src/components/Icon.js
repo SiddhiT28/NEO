@@ -45,3 +45,21 @@ export const SearchIcon = () => {
 
     )
 }
+
+export const ChevronRight = () => {
+    return (
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 7.5L11.763 9.24731C13.1689 10.6408 13.8719 11.3375 13.9801 12.1867C14.0066 12.3947 14.0066 12.6053 13.9801 12.8133C13.8719 13.6625 13.1689 14.3592 11.763 15.7527L10 17.5" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+
+    )
+}
+
+export const CrossIcon = () => {
+    return (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5L19 19M5.00003 19L12 12L19 5" stroke="#2D264B" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+
+    )
+}

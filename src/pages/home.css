@@ -1,0 +1,78 @@
+.main > .onGoingSale {
+  padding: 30px;
+}
+.main > .onGoingSale > .saleLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main > .onGoingSale > .saleLabel > p {
+  font-size: 1.2vw;
+  color: #000;
+}
+
+.main > .onGoingSale > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.main > .onGoingSale > ul > li {
+  border: 1px solid gray;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main > .newArrivals {
+  padding: 30px;
+}
+.main > .newArrivals > .newArrivalsLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main > .newArrivals > .newArrivalsLabel > p {
+  font-size: 1.2vw;
+  color: #000;
+}
+
+.main > .newArrivals > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.main > .newArrivals > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.main > .newArrivals > ul > li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  background: rgba(0, 0, 0, 0.5);
+  background: rgba(185, 185, 185, 0.33);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.main > .newArrivals > ul > li > img {
+  width: 15vh;
+  filter: drop-shadow(0px 9px 25px rgba(0, 0, 0, 0.25));
+}

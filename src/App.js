@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar';
 import Cart from './pages/Cart';
 import Favorites from './pages/Favorites';
 import Home from './pages/Home';
+import Login from './pages/Login';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path='cart' element={<Cart />} />
           <Route path='favorites' element={<Favorites />} />
         </Route>
+        <Route path='/login' element={<Login />} />
       </Routes>
     </div>
   );

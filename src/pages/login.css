@@ -1,0 +1,62 @@
+.mainLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainLogin > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mainLogin > form > .inputGrp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.mainLogin > form label {
+  font-size: 1vw;
+  color: #39085f;
+}
+
+.mainLogin > form input {
+  outline: none;
+  border: none;
+  font-size: 1.2vw;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.mainLogin > form > button {
+  font-size: 1vw;
+  padding: 5px 20px;
+  border: none;
+  background: #39085f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mainLogin > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.mainLogin > p > a {
+  text-decoration: none;
+  color: #39085f;
+}

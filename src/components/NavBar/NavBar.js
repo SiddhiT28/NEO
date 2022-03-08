@@ -1,16 +1,27 @@
-import React from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Outlet, Link, useNavigate } from 'react-router-dom'
 import { HamBurger, CartIcon, Heart, SearchIcon } from '../Icon'
+import LeftDrawer from '../LeftDrawer/LeftDrawer'
 import "./navBar.css"
 
 export default function NavBar() {
+
+    const Navigate = useNavigate()
+
+    const [isMenuBarOpen, setIsMenuBarOpen] = useState(false)
+
+    const toggleMenuBar = () => {
+        setIsMenuBarOpen(!isMenuBarOpen)
+    }
+
     return (
         <div>
             <nav className='navBar'>
+                {isMenuBarOpen && <LeftDrawer setIsMenuOpen={setIsMenuBarOpen} />}
                 <ul>
                     <li>
 
-                        <button className='menuBtn'>
+                        <button onClick={toggleMenuBar} className='menuBtn'>
                             <HamBurger />
                         </button>
                     </li>
@@ -36,7 +47,9 @@ export default function NavBar() {
                         </Link>
                     </li>
                     <li className='user'>
-                        <button>
+                        <button onClick={() => {
+                            Navigate('/login');
+                        }}>
                             Login/Signup
                         </button>
                     </li>
