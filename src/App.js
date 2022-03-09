@@ -5,6 +5,7 @@ import Cart from './pages/Cart';
 import Favorites from './pages/Favorites';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Register from './pages/Register';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='cart' element={<Cart />} />
           <Route path='favorites' element={<Favorites />} />
         </Route>
+        <Route path="/register" element={<Register />} />
         <Route path='/login' element={<Login />} />
       </Routes>
     </div>

@@ -2,51 +2,93 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  padding-top: 10vh;
   gap: 20px;
   width: 100vw;
-  height: 100vh;
 }
 
 .mainLogin > form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  justify-content: stretch;
   gap: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.233);
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
+  width: 20vw;
 }
 
-.mainLogin > form > .inputGrp {
+.mainLogin > form > .inputContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 20px;
+  height: 40vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.mainLogin > form > .inputContainer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.mainLogin > form > .inputContainer > .inputGrp {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   gap: 10px;
 }
 
-.mainLogin > form label {
+.mainLogin > form .inputContainer label {
   font-size: 1vw;
   color: #39085f;
 }
 
-.mainLogin > form input {
+.mainLogin > form > .inputContainer > .inputGrp > input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2vw;
+  -moz-appearance: textfield;
+}
+
+.mainLogin > form > .inputContainer > .inputGrp > .inputPasswordGrp {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.mainLogin > form > .inputContainer > .inputGrp > .inputPasswordGrp > input {
   outline: none;
   border: none;
   font-size: 1.2vw;
   width: 100%;
-  border-bottom: 1px solid black;
+}
+.mainLogin > form > .inputContainer > .inputGrp > .inputPasswordGrp > button {
+  background: none;
+  border: none;
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .mainLogin > form > button {
   font-size: 1vw;
-  padding: 5px 20px;
+  padding: 10px 20px;
   border: none;
   background: #39085f;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  width: 100%;
 }
 
 .mainLogin > p {
