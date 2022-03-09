@@ -50,6 +50,14 @@ export default function Register() {
         } else {
             if (isValidEmail && isValidPassword && confirmPasswordMatch && isValidPhoneNumber) {
 
+
+                const userData = {
+                    name: nameInput.current.value,
+                    email: emailInput.current.value,
+                    password: passwordInput.current.value,
+                    phone: phoneInput.current.value
+                }
+
                 Navigation('/login')
             }
 

@@ -1,8 +1,6 @@
 .drawerBg {
-  background-color: rgba(0, 0, 0, 0.329);
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -12,11 +10,22 @@
 .drawerLeft {
   background-color: white;
   position: absolute;
-  left: 0;
   top: 0;
   width: 15%;
-  height: 100%;
+  height: calc(100vh - 20px);
   padding: 20px;
+  border-radius: 0 15px 10px 0;
+}
+
+.drawerContent .categoryList {
+  margin-top: 20px;
+}
+.drawerContent .categoryList ul {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
 }
 
 .header {

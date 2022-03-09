@@ -17,7 +17,8 @@ export default function NavBar() {
     return (
         <div>
             <nav className='navBar'>
-                {isMenuBarOpen && <LeftDrawer setIsMenuOpen={setIsMenuBarOpen} />}
+
+                <LeftDrawer setIsMenuOpen={setIsMenuBarOpen} isMenuBarOpen={isMenuBarOpen} />
                 <ul>
                     <li>
 
